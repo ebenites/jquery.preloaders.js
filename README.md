@@ -6,7 +6,7 @@
 <h3>Check out the <a href="http://ebenites.github.io/jquery.preloaders.js/index.html" target="_blank">Demo</a></h3>
 <h1>Install by Bower</h1>
 <p>jquery.preloaders.js is available as a Bower package. Just run</p>
-<pre>bower install fakeloader</pre>
+<pre>bower install jquery.preloaders.js</pre>
 
 <h1>1. Include Folowing Libraries</h1>
 <p>JQuery reference and the jquery.preloaders.js</p>
