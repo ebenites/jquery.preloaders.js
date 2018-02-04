@@ -1,0 +1,18 @@
+{
+  "name": "jquery.preloaders.js",
+  "main": "jquery.preloaders.js",
+  "authors": [
+    "Erick Benites Cuenca <erick.benites@gmail.com>"
+  ],
+  "description": "jquery.preloaders.js is a lightweight jQuery plugin that helps you create an animated spinner while the ajax content is loading.",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

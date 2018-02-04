@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- bootstrap not required -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
+    <!-- jquery required -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- the jquery.preloaders plugin -->
+    <script src="jquery.preloaders.js"></script>
+
+    <script>
+        $(function(){
+
+            // Basic example
+            $('.example1').click(function(){
+
+                $.preloader.start();
+
+                setTimeout(function(){
+                    $.preloader.stop();
+                }, 3000);
+
+            });
+
+            // Advanced example
+            $('.example2').click(function(){
+
+                $.preloader.start({
+                    modal: true, 
+                    position:'top-right',   // position (default:'center'): ['center' | 'top-left' | 'top-right' | ' bottom-left' | 'bottom-right' | {top:'200px', left:'200px'}]
+                });
+
+                setTimeout(function(){
+                    $.preloader.stop();
+                }, 3000);
+
+            });
+
+            // With button example
+            $('.example3').click(function(){
+
+                var e = $('<div/>').css({'margin-left': '10px', 'display': 'inline-block', 'vertical-align': 'middle'}).insertAfter(this).preloader({src:'sprites.32.png'});
+
+                setTimeout(function(){
+                    e.preloader('stop');
+                }, 3000);
+
+            });
+
+        });
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="page-header">
+            <h1>jQuery preloaders <small>simplest preloading plugin</small></h1>
+        </div>
+
+        <button class="btn btn-default example1">Test loading</button>
+
+        <button class="btn btn-default example2">Test loading with modal</button>
+
+        <button class="btn btn-default example3">Test loading on button</button>
+
+    </div>
+    
+
+</body>
+</html>
